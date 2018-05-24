@@ -31,9 +31,10 @@ body {
     /*min-height: 240px;*/
     border-radius: 10px;
     padding-bottom: 15px;
+    border-right: 1px solid #e3e3e3;
 }
 .task-list:not(:last-child) {
-    margin-right: 10px;
+   /* margin-right: 10px;*/
 }
 
 .task-list input, .task-list textarea{
@@ -82,6 +83,8 @@ body {
 
 h3{
     text-align: center;
+    color: #fff;
+    
 }
 
 #delete-div{
