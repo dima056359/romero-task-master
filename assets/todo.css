@@ -96,3 +96,78 @@ h3{
     line-height: 75px;
     text-align: center;
 }
+
+/*Form Settings*/
+
+.wrapper {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	height: 300px;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.wrapper h2 {
+	color: #666;
+	margin:0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-size: 30px;
+}
+
+.wrapper .input-field {
+	position: relative;
+	width: 100%;
+	margin-top:50px;
+}
+
+.wrapper .input-field input {
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	border:none;
+	border-bottom: 1px solid #666;
+	outline: none;
+	font-size: 16px;
+	color: #666;
+	font-weight: 700;
+}
+
+.wrapper .input-field label {
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 3px;
+	pointer-events: none;
+	font-style: italic;
+	transition: 0.5s;
+	color: #666;
+	opacity: 0.5;
+}
+
+.wrapper .input-field input:valid + label ,.wrapper .input-field input:focus + label {
+	top:-30px;
+	background: #007bff;
+	color: #fff;
+	border-radius: 20px;
+	font-weight: 700;
+	opacity: 1;
+}
+
+/*Form Settings*/
+
+/*Responsive sign in form*/
+@media (max-width: 610px) {
+    .wrapper {
+        width: 300px;
+        height: 500px;
+    }
+
+   
+}
